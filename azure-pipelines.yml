@@ -16,7 +16,7 @@ variables:
   Major: '1'
   Minor: '0'
   Patch: '$(Build.BuildId)'
-  testProject: 'tests/MGroup.IGA.Tests'
+  testProject: 'tests/MGroup.XFEM.Tests'
 
 steps:
 - task: DotNetCoreCLI@2
@@ -34,7 +34,7 @@ steps:
     SonarCloud: 'SonarCloud'
     organization: 'mgroupntua'
     scannerMode: 'MSBuild'
-    projectKey: 'MSolve.IGA'
+    projectKey: 'MSolve.XFEM'
     extraProperties: 'sonar.cs.opencover.reportsPaths=$(Build.SourcesDirectory)/coverage/coverage.opencover.xml'
 
 
