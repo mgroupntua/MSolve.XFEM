@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MGroup.Analyzers" Version="1.0.84" />
+    <PackageReference Include="MGroup.FEM" Version="1.0.100" />
+    <PackageReference Include="MGroup.MSolve.Discretization" Version="1.0.99" />
+    <PackageReference Include="MGroup.MSolve.Geometry" Version="1.0.99" />
+    <PackageReference Include="MGroup.MSolve.Logging" Version="1.0.99" />
+    <PackageReference Include="MGroup.Problems" Version="1.0.95" />
+    <PackageReference Include="MGroup.Solvers" Version="1.0.96" />
+  </ItemGroup>
+
+</Project>

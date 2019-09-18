@@ -1,0 +1,19 @@
+﻿using System.Collections.Generic;
+using MGroup.MSolve.Discretization.Integration;
+
+namespace MGroup.XFEM.Integration
+{
+    // Not sure if generics are needed. I could just have different interfaces for different element types. 
+    // It would make sense if some of the actual integration strategy implementations would work for many element types.
+
+    /// <summary>
+    /// Algorithms for complex integration rules for specific finite element types. These need the data from each 
+    /// finite element to generate integration points for use only by that finite element. 
+    /// They typically make use of the standard quadrature rules.
+    /// </summary>
+    /// <typeparam name="TElement"></typeparam>
+    public interface IIntegrationStrategy2D<TElement>
+    {
+        IReadOnlyList<GaussPoint> GenerateIntegrationPoints(TElement element);
+    }
+}
